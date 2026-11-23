@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Suni 💗</title>
+<link href="https://googleapis.com" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;user-select:none}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:linear-gradient(135deg,#ffd6e7,#e9d5ff,#ffedd5);color:#3b264d;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:18px;overflow-x:hidden}
+#mBtn{position:fixed;top:14px;right:14px;z-index:50;background:#fff;border:2px solid #f9a8d4;color:#db2777;padding:7px 14px;border-radius:30px;font-family:'Fredoka',sans-serif;font-size:12px}
+.card{background:rgba(255,255,255,.95);border:3px solid #fff;border-radius:30px;padding:24px 18px;max-width:400px;width:100%;text-align:center;box-shadow:0 18px 40px rgba(168,85,247,.16);display:none}
+.card.on{display:block}
+.tag{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#9333ea;margin-bottom:6px}
+h1,h2{font-family:'Fredoka',sans-serif;color:#ec4899;margin-bottom:8px;font-size:24px}
+p{font-size:14.5px;line-height:1.5;margin-bottom:14px}
+.art{width:175px;height:170px;margin:0 auto 12px;border-radius:22px;padding:6px;background:linear-gradient(135deg,#fce7f3,#f3e8ff);border:2px solid #fbcfe8}
+.art svg{width:100%;height:100%;border-radius:16px;display:block}
+.btn-row{display:flex;justify-content:center;align-items:center;gap:14px;min-height:60px;margin-top:6px}
+.btn{background:linear-gradient(135deg,#ec4899,#8b5cf6);color:#fff;border:none;padding:12px 24px;font-family:'Fredoka',sans-serif;font-size:15px;border-radius:50px;box-shadow:0 8px 20px rgba(236,72,153,.35)}
+#noBtn{background:#f3e8ff;color:#7e22ce;border:2px solid #d8b4fe;padding:10px 20px;font-family:'Fredoka',sans-serif;font-size:14px;border-radius:50px;z-index:30}
+.rc-row{display:flex;justify-content:space-between;align-items:center;background:#fdf4ff;border:1px solid #f3e8ff;padding:9px 12px;border-radius:14px;margin-bottom:7px;font-size:13px;font-weight:600}
+.badge{background:#fff;color:#db2777;padding:3px 9px;border-radius:20px;font-family:'Fredoka',sans-serif;font-size:12.5px;border:1px solid #fbcfe8}
+.rc-row.inf{background:linear-gradient(135deg,#fdf2f8,#fef3c7);border:2px solid #f59e0b}
+.rc-row.inf .badge{background:linear-gradient(135deg,#ec4899,#f59e0b);color:#fff;border:none;font-size:14px}
+.verdict{background:#fef3c7;color:#92400e;font-family:'Fredoka',sans-serif;font-size:13.5px;padding:9px;border-radius:12px;margin:10px 0 12px;border:1px dashed #f59e0b}
+.letter{background:#fff9fc;border:2px solid #fbcfe8;border-radius:18px;padding:16px 14px;text-align:left;margin:8px 0 14px}
+.letter p{font-size:14px;color:#4a355c;margin-bottom:10px}
+.sig{font-family:'Great Vibes',cursive;font-size:28px;color:#ec4899;text-align:right}
+.petal{position:fixed;top:-20px;pointer-events:none;z-index:2;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(360deg)}}
+</style>
+</head>
+<body>
+<button type="button" id="mBtn" onclick="toggleM()">🎸 Play Song</button>
+<div id="s1" class="card on">
+  <div class="tag">✨ Incoming Reply For Suni ✨</div>
+  <div class="art" onclick="startM()">
+    <svg viewBox="0 0 300 280" xmlns="http://w3.org">
+      <rect width="300" height="280" fill="#fce7f3"/>
+      <path d="M150 64 C135 50 122 58 122 70 C122 82 150 96 150 96 C150 96 178 82 178 70 C178 58 165 50 150 64 Z" fill="#ec4899"/>
+      <path d="M58 280 C62 218 88 196 118 196 C134 196 146 212 150 280 Z" fill="#6366f1"/>
+      <circle cx="114" cy="152" r="32" fill="#fed7aa"/>
+      <path d="M82 146 C82 114 142 110 146 144 C136 128 98 128 82 146 Z" fill="#1e1b4b"/>
+      <circle cx="122" cy="150" r="3" fill="#1e1b4b"/><circle cx="136" cy="150" r="3" fill="#1e1b4b"/>
+      <path d="M124 162 Q130 168 136 162" stroke="#1e1b4b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M150 280 C154 212 168 198 190 198 C220 198 242 222 246 280 Z" fill="#ec4899"/>
+      <circle cx="186" cy="158" r="29" fill="#fed7aa"/>
+      <path d="M158 152 C164 120 218 122 222 165 C224 205 212 240 202 258 C205 215 202 168 158 152 Z" fill="#1e1b4b"/>
+      <circle cx="170" cy="156" r="2.8" fill="#1e1b4b"/><circle cx="184" cy="156" r="2.8" fill="#1e1b4b"/>
+      <path d="M172 167 Q177 172 182 167" stroke="#1e1b4b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <h1>Quick Question, Suni! 😜</h1>
+  <p>After that amazing birthday surprise you made, do you admit I'm the luckiest (and cutest) girlfriend ever?</p>
+  <div class="btn-row">
+    <button type="button" id="yesBtn" class="btn" onclick="go(2)">Yes, 100%! 💖</button>
+    <button type="button" id="noBtn" onclick="dodge()">No 🙈</button>
+  </div>
+</div>
+<div id="s2" class="card">
+  <div class="tag">📋 Official Evaluation</div>
+  <h2>Suni's Boyfriend Report Card</h2>
+  <div class="rc-row"><span>✨ Creativity &amp; Birthday Effort</span><span class="badge">100 / 10</span></div>
+  <div class="rc-row"><span>🥰 Making Me Smile Nonstop</span><span class="badge">100 / 10</span></div>
+  <div class="rc-row"><span>🧠 Remembering Tiny Details</span><span class="badge">100 / 10</span></div>
+  <div class="rc-row"><span>😂 Humor &amp; Inside Jokes</span><span class="badge">100 / 10</span></div>
+  <div class="rc-row"><span>🤗 Comfort &amp; Safe-Place Vibes</span><span class="badge">100 / 10</span></div>
+  <div class="rc-row inf"><span>💖 Being My Whole World</span><span class="badge">∞ / 10</span></div>
+  <div class="verdict">🏆 Verdict: Certified Best Boyfriend in the Universe!</div>
+  <button type="button" class="btn" onclick="go(3)">Read My Letter 💌</button>
+</div>
+<div id="s3" class="card">
+  <div class="tag">💌 From My Heart</div>
+  <h2>Thank You, Suni 💗</h2>
+  <div class="letter">
+    <p><b>Hey Suni,</b></p>
+    <p>Seeing the birthday surprise you built for me honestly left me speechless. Knowing that you put so much time, creativity, and love into every single detail just to make me smile is the sweetest gift I have ever received.</p>
+    <p>Just like the song playing right now—in every quiet moment and every loud laugh, I just wanna be yours. Thank you for always making me feel so cherished, safe, and happy.</p>
+    <p>You didn't just make my birthday special—you make every single day brighter just by being mine. I love you endlessly! 💖</p>
+    <div class="sig">— Forever yours, Sonu ✨</div>
+  </div>
+  <button type="button" class="btn" onclick="location.reload()">Replay Surprise 🔄</button>
+</div>
+<script>
+var ac=null,mp=false,mt=null,step=0,nc=0,ys=1;
+function tone(f,d,t,v){if(!ac||!mp)return;var now=ac.currentTime,o=ac.createOscillator(),g=ac.createGain();o.type=t;o.frequency.value=f;g.gain.setValueAtTime(.001,now);g.gain.linearRampToValueAtTime(v,now+.04);g.gain.exponentialRampToValueAtTime(.0001,now+d);o.connect(g);g.connect(ac.destination);o.start(now);o.stop(now+d)}
+function bass(s){var n=s%16;return n<4?138.6:n<8?185:n<12?207.7:n==13?164.8:n==14?207.7:138.6}
+function lead(s){var n=s%16;return n==0?277.2:n==1||n==3?329.6:n==2?415.3:n==4?370:n==5||n==7?440:n==6?554.4:n==8?415.3:n==9||n==11?493.9:n==10?622.3:n==13?329.6:n==14?415.3:277.2}
+function startM(){if(mp)return;var A=window.AudioContext||window.webkitAudioContext;if(!A)return;if(!ac)ac=new A();if(ac.state=="suspended")ac.resume();mp=true;document.getElementById("mBtn").innerText="🎶 Playing...";function lp(){if(!mp)return;tone(bass(step),.5,"triangle",.09);tone(lead(step),.46,"sine",.055);step++;mt=setTimeout(lp,440)}lp()}
+function toggleM(){if(mp){mp=false;clearTimeout(mt);document.getElementById("mBtn").innerText="🎸 Play Song"}else startM()}
+function dodge(){startM();nc++;ys+=0.12;document.getElementById("yesBtn").style.transform="scale("+ys+")";var nb=document.getElementById("noBtn");nb.innerText=nc%5==1?"Too slow! 😜":nc%5==2?"Nice try, Suni!":nc%5==3?"Error: 'No' invalid":nc%5==4?"Nope, tap Yes! 💖":"Can't catch me! 😂";nb.style.position="fixed";nb.style.left=Math.max(16,Math.floor(Math.random()*(window.innerWidth-130)))+"px";nb.style.top=Math.max(60,Math.floor(Math.random()*(window.innerHeight-60)))+"px"}
+function go(n){startM();document.getElementById("noBtn").style.display="none";for(var i=1;i<=3;i++)document.getElementById("s"+i).className="card";document.getElementById("s"+n).className="card on";if(n==3)rain()}
+function rain(){var ic=["💗","✨","🌸","💖","🦋"];for(var i=0;i<28;i++){var d=document.createElement("div");d.className="petal";d.innerText=ic[i%5];d.style.left=Math.random()*100+"vw";d.style.fontSize=(Math.random()*10+14)+"px";d.style.animationDuration=(Math.random()*3+2.5)+"s";document.body.appendChild(d);setTimeout(function(x){return function(){x.remove()}}(d),5500)}}
+</script>
+</body>
+</html>
